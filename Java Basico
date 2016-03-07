@@ -1,0 +1,57 @@
+___ Colection Data LIST ____
+
+package Collections;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class ColecaoLIST {
+
+	private static Collection<String> nomes;
+	
+	public static void main(String[] args) {
+		
+		nomes = new ArrayList<String>();
+		
+		nomes.add("Fulano");
+		nomes.add("Ciclano");
+		nomes.add("Beltrano");
+
+		System.out.println("\n \n \tDados em Coleções de modalidade LIST.");
+		System.out.println("\n \n \tOs dados do Array em LIST: " + nomes);
+		
+		
+	}
+
+}
+
+___ HashSet ____
+
+package Collections;
+
+import java.util.HashSet;
+
+public class ColecaoSET {
+
+	public static void main(String[] args) {
+		
+		HashSet<String> colecaoSet = new HashSet<String>();
+		
+		colecaoSet.add("item 1 do cadastro");
+		colecaoSet.add("item 2 do cadastro");
+		colecaoSet.add("item 3 do cadastro");
+		colecaoSet.add("item 4 do cadastro");
+		colecaoSet.add("item 5 do cadastro");
+		
+		System.out.println("\n\n \tTamanho da colecão SET : " + colecaoSet.size() + "\n");
+		
+		int contador = 0;
+		for (String valor : colecaoSet){
+			System.out.println(++contador + " -> " + valor);
+		}
+		
+		
+
+	}
+
+}
